@@ -5,13 +5,17 @@
     "projectId": "547y5jdq"
   },
   "project": {
-    "name": "homepage-starter"
+    "name": "FinShark Studio"
   },
   "plugins": [
     "@sanity/base",
     "@sanity/default-layout",
     "@sanity/default-login",
-    "@sanity/desk-tool"
+    "@sanity/dashboard",
+    "@sanity/desk-tool",
+    "dashboard-widget-vercel",
+    "dashboard-widget-document-list",
+    "media"
   ],
   "env": {
     "production": {
@@ -24,6 +28,14 @@
     {
       "name": "part:@sanity/base/schema",
       "path": "./schemas/schema"
+    },
+    {
+      "name": "part:@sanity/desk-tool/structure",
+      "path": "./src/deskStructure/index.js"
+    },
+    {
+      "implements": "part:@sanity/dashboard/config",
+      "path": "./src/dashboardConfig.js"
     }
   ]
 }

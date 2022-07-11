@@ -1,6 +1,6 @@
 export default {
-  name: "aboutPage",
-  title: "About Page",
+  name: "homepage",
+  title: "Homepage",
   type: "document",
   fields: [
     { title: "Title", name: "title", type: "string" },
@@ -14,16 +14,17 @@ export default {
         {
           type: "reference",
           to: [
-            { type: "aboutHero" },
-            { type: "aboutStatList" },
-            { type: "homepageProductList" },
-            { type: "aboutLeadership" },
-            { type: "homepageBenefitList" },
-            { type: "aboutLogoList" },
+            { type: "homepageHero" },
+            { type: "homepageFeature" },
+            { type: "homepageFeatureList" },
             { type: "homepageCta" },
+            { type: "homepageLogoList" },
+            { type: "homepageTestimonialList" },
+            { type: "homepageBenefitList" },
+            { type: "homepageStatList" },
           ],
         },
       ],
     },
   ],
-}
+};
