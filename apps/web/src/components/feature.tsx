@@ -13,6 +13,7 @@ import {
   HomepageImage,
   HomepageLink,
 } from "./ui"
+import * as styles from './feature.css'
 
 export interface FeatureDataProps {
   id: string
@@ -29,7 +30,7 @@ interface FeatureProps {
 
 export default function Feature(props: FeatureDataProps & FeatureProps) {
   return (
-    <Section padding={4} background="muted">
+    <Section className={styles.featureSection} padding={0} background="muted">
       <Container>
         <Flex gap={4} variant="responsive">
           <Box width="half" order={props.flip ? 1 : null}>
@@ -42,11 +43,11 @@ export default function Feature(props: FeatureDataProps & FeatureProps) {
           </Box>
           <Box width="half">
             <Subhead>
-              {props.kicker && <Kicker>{props.kicker}</Kicker>}
+              {/* {props.kicker && <Kicker>{props.kicker}</Kicker>} */}
               {props.heading}
             </Subhead>
             <Text variant="lead">{props.text}</Text>
-            <ButtonList links={props.links} />
+            {props.links && <ButtonList links={props.links} />}
           </Box>
         </Flex>
       </Container>

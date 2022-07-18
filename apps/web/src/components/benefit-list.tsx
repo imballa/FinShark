@@ -21,12 +21,12 @@ interface BenefitProps {
 
 function Benefit(props: BenefitProps) {
   return (
-    <Box as="li" width="third" padding={4} paddingY={3}>
+    <Box as="li" width="third" padding={4}>
       {props.image && (
         <Icon
           alt={props.image.alt}
           image={props.image.gatsbyImageData}
-          size="small"
+          size="medium"
         />
       )}
       <Space size={2} />

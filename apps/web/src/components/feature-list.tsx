@@ -12,15 +12,15 @@ export interface FeatureListProps {
 
 export default function FeatureList(props: FeatureListProps) {
   return (
-    <Container width="fullbleed">
+    <Container>
       <Box background="muted" radius="large">
-        <Box center paddingY={5}>
+        {/* <Box center paddingY={5}>
           <Heading>
             {props.kicker && <Kicker>{props.kicker}</Kicker>}
             {props.heading}
           </Heading>
           {props.text && <Text>{props.text}</Text>}
-        </Box>
+        </Box> */}
         {props.content.map((feature, i) => (
           <Feature key={feature.id} {...feature} flip={Boolean(i % 2)} />
         ))}

@@ -149,7 +149,7 @@ export default function Header() {
                 </Button>
               )}
             </div>
-            <Nudge right={3}>
+            {navItems.length > 0 && <Nudge right={3}>
               <InteractiveIcon
                 title="Toggle menu"
                 onClick={() => setOpen(!isOpen)}
@@ -159,7 +159,7 @@ export default function Header() {
               >
                 {isOpen ? <X /> : <Menu />}
               </InteractiveIcon>
-            </Nudge>
+            </Nudge>}
           </Flex>
         </Flex>
       </Container>
