@@ -16,6 +16,10 @@ export default () =>
                 .schemaType("homepage")
                 .child(S.documentTypeList("homepage").title("Home Page")),
               S.listItem()
+                .title("About Us Page")
+                .schemaType("aboutPage")
+                .child(S.documentTypeList("aboutPage").title("About Us")),
+              S.listItem()
                 .title("Other Pages")
                 .schemaType("page")
                 .child(S.documentTypeList("page").title("Other Pages")),

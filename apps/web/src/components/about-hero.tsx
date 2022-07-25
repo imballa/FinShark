@@ -13,7 +13,7 @@ export interface AboutHeroProps {
 export default function AboutHero(props: AboutHeroProps) {
   return (
     <Section>
-      <Container width="wide">
+      <Container width="tight">
         {props.image && (
           <GatsbyImage
             alt={props.image.alt}

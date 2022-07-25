@@ -288,7 +288,7 @@ export const text: Record<TextVariants, string> = styleVariants({
     margin0,
     {
       marginTop: theme.space[4],
-      marginBottom: theme.space[6],
+      marginBottom: theme.space[4],
       fontSize: theme.fontSizes[5],
       fontFamily: theme.fonts.heading,
       fontWeight: theme.fontWeights.extrabold,
@@ -297,6 +297,7 @@ export const text: Record<TextVariants, string> = styleVariants({
       "@media": {
         [media.small]: {
           fontSize: theme.fontSizes[7],
+          marginBottom: theme.space[5],
         },
       },
     },
