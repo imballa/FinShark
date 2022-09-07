@@ -13,6 +13,7 @@ import {
   Avatar,
   HomepageImage,
 } from "./ui"
+import * as styles from "./testimonial-list.css"
 
 interface TestimonialProps {
   id: string
@@ -23,7 +24,7 @@ interface TestimonialProps {
 
 function Testimonial(props: TestimonialProps) {
   return (
-    <Flex variant="start">
+    <Flex variant="start" className={styles.card}>
       {props.avatar && (
         <Avatar alt={props.avatar.alt} image={props.avatar.gatsbyImageData} />
       )}
@@ -59,7 +60,7 @@ export default function TestimonialList(props: TestimonialListProps) {
         </Box>
         <FlexList gutter={3} variant="start" responsive wrap>
           {props.content.map((testimonial, index) => (
-            <Box as="li" key={testimonial.id + index} width="half" padding={3}>
+            <Box as="li" key={testimonial.id + index} width="half" padding={4}>
               <Testimonial {...testimonial} />
             </Box>
           ))}

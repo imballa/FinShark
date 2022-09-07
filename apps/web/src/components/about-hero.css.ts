@@ -6,6 +6,16 @@ import { media } from "./ui.css"
 // current length of content in the Header and Text
 export const aboutHeroHeader = style({
   // maxWidth: "1108px",
+  fontSize: theme.fontSizes[5],
+  marginTop: theme.space[4],
+  marginBottom: theme.space[4],
+  // maxWidth: "798px",
+  "@media": {
+    [media.small]: {
+      fontSize: theme.fontSizes[6],
+      marginTop: theme.space[5],
+    },
+  },
 })
 
 export const aboutHeroText = style({

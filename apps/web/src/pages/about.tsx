@@ -46,6 +46,7 @@ export const query = graphql`
         ...AboutHeroContent
         ...AboutStatListContent
         ...HomepageProductListContent
+        ...HomepageFeatureListContent
         ...AboutLeadershipContent
         ...HomepageBenefitListContent
         ...AboutLogoListContent

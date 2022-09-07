@@ -111,6 +111,11 @@ export const flexVariants: Record<FlexVariants, string> = styleVariants({
     flexWrap: "wrap",
     justifyContent: "center",
   },
+  textCenter: {
+    width: "100%",
+    flexWrap: "wrap",
+    textAlign: "center",
+  },
   responsive: {
     flexDirection: "column",
     "@media": {
@@ -278,7 +283,12 @@ export const text: Record<TextVariants, string> = styleVariants({
     margin0,
     {
       marginBottom: theme.space[3],
-      fontSize: theme.fontSizes[3],
+      fontSize: theme.fontSizes[2],
+      "@media": {
+        [media.small]: {
+          fontSize: theme.fontSizes[3],
+        },
+      },
       fontWeight: theme.fontWeights.normal,
       lineHeight: theme.lineHeights.text,
       letterSpacing: theme.letterSpacings.normal,
@@ -322,7 +332,12 @@ export const text: Record<TextVariants, string> = styleVariants({
     margin0,
     {
       marginBottom: theme.space[3],
-      fontSize: theme.fontSizes[5],
+      fontSize: theme.fontSizes[4],
+      "@media": {
+        [media.small]: {
+          fontSize: theme.fontSizes[5],
+        },
+      },
       fontWeight: theme.fontWeights.extrabold,
       lineHeight: theme.lineHeights.tight,
       letterSpacing: theme.letterSpacings.tight,
@@ -407,6 +422,9 @@ export const text: Record<TextVariants, string> = styleVariants({
   ],
   center: {
     textAlign: "center",
+  },
+  start: {
+    textAlign: "start",
   },
   bold: {
     fontWeight: theme.fontWeights.bold,
@@ -554,7 +572,7 @@ export const blockquote = style({
   paddingLeft: 0,
   paddingRight: 0,
   paddingTop: 0,
-  paddingBottom: theme.space[4],
+  paddingBottom: 0,
 })
 
 export const avatar = style({
@@ -575,6 +593,10 @@ export const logos: Record<LogoSizes, string> = styleVariants({
   medium: {
     maxWidth: "128px",
   },
+  large: {
+    width: "180px",
+    height: "90px",
+  },
 })
 
 export type IconSizes = "small" | "medium" | "large"
@@ -583,6 +605,7 @@ export const icons: Record<IconSizes, string> = styleVariants(
   {
     small: "24px",
     medium: "32px",
+    semiLarge: "40px",
     large: "64px",
   },
   (size) => ({
