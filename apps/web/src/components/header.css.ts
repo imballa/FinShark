@@ -25,11 +25,16 @@ const mobileHeaderNavWrapperBase = style({
   },
 })
 
+export const noWrap = style({
+  display: "flex",
+  flexWrap: "nowrap",
+})
+
 export const mobileHeaderNavWrapper = styleVariants({
   open: [
     mobileHeaderNavWrapperBase,
     {
-      background: theme.colors.primary,
+      background: theme.colors.reversed,
     },
   ],
   closed: [mobileHeaderNavWrapperBase],
