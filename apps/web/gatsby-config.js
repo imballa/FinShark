@@ -29,5 +29,14 @@ module.exports = {
         icon: "src/favicon.png",
       },
     },
+    {
+      resolve: "gatsby-plugin-crisp-chat",
+      options: {
+        websiteId: "bbb3ed17-5fe8-4b19-b085-bd0a0896fc9f",
+        enableDuringDevelop: true, // Optional. Disables Crisp Chat during gatsby develop. Defaults to true.
+        defer: true, // Optional. Sets the Crisp loading script to defer instead of async. Defaults to false.
+        enableImprovedAccessibility: true, // Optional. Sets aria-label attribute on pop-up icon for screen readers. Defaults to true.
+      },
+    },
   ],
 }
