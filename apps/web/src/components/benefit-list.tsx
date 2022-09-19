@@ -44,7 +44,7 @@ export interface BenefitListProps {
 
 export default function BenefitList(props: BenefitListProps) {
   return (
-    <Section>
+    <Section id="services">
       <Container>
         <Box center>
           {props.heading && <Heading>{props.heading}</Heading>}

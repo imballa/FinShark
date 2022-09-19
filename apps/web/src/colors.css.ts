@@ -5,4 +5,5 @@ export const colors = {
   muted: "#ffffff",
   active: "#e6e6e6",
   black: "#000",
+  blue: "#011C53",
 }

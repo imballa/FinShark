@@ -1,6 +1,10 @@
 import { globalStyle, globalKeyframes } from "@vanilla-extract/css"
 import { theme } from "./theme.css"
 
+globalStyle("html", {
+  scrollBehavior: "smooth",
+})
+
 globalStyle("body", {
   margin: 0,
   fontFamily: theme.fonts.text,

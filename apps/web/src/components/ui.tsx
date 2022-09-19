@@ -95,6 +95,7 @@ export function Flex({
 }
 
 interface BoxProps extends BaseProps {
+  id?: string
   width?: styles.Widths
   background?: styles.Backgrounds
   padding?: SpaceTokens
