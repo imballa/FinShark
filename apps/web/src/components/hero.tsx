@@ -25,6 +25,7 @@ export interface HeroProps {
 }
 
 export default function Hero(props: HeroProps) {
+  console.log("props.image:", props.image)
   return (
     <Section>
       <Container>
@@ -32,7 +33,7 @@ export default function Hero(props: HeroProps) {
           <Box width="half">
             {props.image && (
               <GatsbyImage
-                alt={props.image.alt}
+                alt={props.kicker}
                 image={getImage(props.image.gatsbyImageData)}
               />
             )}

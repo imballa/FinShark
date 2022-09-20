@@ -1,0 +1,129 @@
+[
+  {
+    "question": "WHAT IS YOUR RELATIONSHIP WITH MONEY?",
+    "answerOptions": [
+      {
+        "answer": "Money is my best friend. I have abundant flow of money.",
+        "isCorrect": true
+      },
+      {
+        "answer": "I do not share a great relationship with money. I always have a shortage of money."
+      }
+    ]
+  },
+  {
+    "question": "DO YOU EXPERIENCE EMOTIONS LIKE SHAME AND GUILT WHEN MONEY COMES IN OR GOES OUT OF YOUR LIFE?",
+    "answerOptions": [
+      {
+        "answer": "No- I feel happy when money comes in or even goes out of my life."
+      },
+      {
+        "answer": "Yes- I feel shameful and guilty when money comes in or goes out of my life.",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "WHAT EMOTIONS DO YOU EXPERIENCE WHILE PAYING OUT TAXES?",
+    "answerOptions": [
+      { "answer": "Contributing, pride, happiness and satisfaction." },
+      { "answer": "Frustration, guilt and sadness.", "isCorrect": true }
+    ]
+  },
+  {
+    "question": "DOES MONEY STAY AWAY FROM YOU?",
+    "answerOptions": [
+      { "answer": "No- I am money magnet. Money is in air for me." },
+      {
+        "answer": "Yes- I am always in a money crisis. Money is either ice or river for me.",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "DOES THE LACK OF MONEY TROUBLE YOU?",
+    "answerOptions": [
+      { "answer": "No- I have a constant flow of money." },
+      {
+        "answer": "Yes- I experience negative energy due to not having enough.",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "DO YOU THINK IT IS AN UNSAFE WORLD WHEN IT COMES TO MONEY?",
+    "answerOptions": [
+      { "answer": "No- It is a safe world and I can trust people around me." },
+      {
+        "answer": "Yes- People can do whatever it takes to earn more money.",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "DO YOU THINK, “ONLY LUCKY PEOPLE CAN BECOME RICH”?",
+    "answerOptions": [
+      { "answer": "No- Everyone has the birth right to become rich." },
+      {
+        "answer": "Yes- Money comes only to lucky people.",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "DO YOU UNDERSTAND MONEY?",
+    "answerOptions": [
+      { "answer": "Yes- Money is a combination of EQ, IQ and SQ." },
+      {
+        "answer": "No- Understanding money is very complicated.",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "ARE YOU COMFORTABLE AND SATISFIED WITH THE MONEY YOU HAVE?",
+    "answerOptions": [
+      {
+        "answer": "Yes- I have planned my finances according to goal based investment."
+      },
+      {
+        "answer": "No- I am always short of money because | have not planned my finances according to my goals.",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "DO YOU THINK, “THE LESS YOU GIVE, THE MORE YOU HAVE”?",
+    "answerOptions": [
+      { "answer": "No- Giving out money for a good cause is never harmful." },
+      {
+        "answer": "Yes- I do not like giving money.",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "DO YOU BELIEVE FINANCIAL GOALS ARE ONLY FOR THE RICH PEOPLE?",
+    "answerOptions": [
+      {
+        "answer": "No- They are essential for everyone to live a comfortable lifestyle."
+      },
+      {
+        "answer": "Yes- It is just a fancy word for the rich class.",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "question": "DO YOU LIKE GIVING GIFTS?",
+    "answerOptions": [
+      {
+        "answer": "Yes- I always appreciate people with gifts."
+      },
+      {
+        "answer": "No- I just like receiving gifts.",
+        "isCorrect": true
+      }
+    ]
+  }
+]

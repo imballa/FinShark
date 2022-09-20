@@ -25,7 +25,7 @@ function AboutProfile(props: AboutProfileProps) {
     <Box width="third" padding={4} center>
       {props.image && (
         <GatsbyImage
-          alt={props.image.alt}
+          alt={props.name}
           image={getImage(props.image.gatsbyImageData)}
         />
       )}

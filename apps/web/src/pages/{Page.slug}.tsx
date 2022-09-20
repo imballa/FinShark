@@ -18,6 +18,7 @@ interface PageProps {
 
 export default function Page(props: PageProps) {
   const { page } = props.data
+  console.log({ page })
 
   return (
     <Layout {...page}>

@@ -16,7 +16,7 @@ export default function AboutHero(props: AboutHeroProps) {
       <Container width="tight">
         {props.image && (
           <GatsbyImage
-            alt={props.image.alt}
+            alt={props.heading.substring(0, 19)}
             image={getImage(props.image.gatsbyImageData)}
             className={styles.aboutHeroImage}
           />

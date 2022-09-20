@@ -13,7 +13,7 @@ import {
   HomepageImage,
   HomepageLink,
 } from "./ui"
-import * as styles from './feature.css'
+import * as styles from "./feature.css"
 
 export interface FeatureDataProps {
   id: string
@@ -36,7 +36,7 @@ export default function Feature(props: FeatureDataProps & FeatureProps) {
           <Box width="half" order={props.flip ? 1 : null}>
             {props.image && (
               <GatsbyImage
-                alt={props.image.alt}
+                alt={props.heading}
                 image={getImage(props.image.gatsbyImageData)}
               />
             )}

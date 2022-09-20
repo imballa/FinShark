@@ -18,7 +18,7 @@ import {
   desktopHeaderNavWrapper,
   mobileHeaderNavWrapper,
   mobileNavSVGColorWrapper,
-  noWrap
+  noWrap,
 } from "./header.css"
 import NavItemGroup, { NavItemGroupNavItem } from "./nav-item-group"
 import BrandLogo from "./brand-logo"
@@ -142,17 +142,17 @@ export default function Header() {
             </NavLink>
           </span>
           <Flex>
-            {navItems.length > 0 && <Nudge right={3}>
-              <InteractiveIcon
-                title="Toggle menu"
-                onClick={() => setOpen(!isOpen)}
-                className={
-                  mobileNavSVGColorWrapper["primary"]
-                }
-              >
-                {isOpen ? <X /> : <Menu />}
-              </InteractiveIcon>
-            </Nudge>}
+            {navItems.length > 0 && (
+              <Nudge right={3}>
+                <InteractiveIcon
+                  title="Toggle menu"
+                  onClick={() => setOpen(!isOpen)}
+                  className={mobileNavSVGColorWrapper["primary"]}
+                >
+                  {isOpen ? <X /> : <Menu />}
+                </InteractiveIcon>
+              </Nudge>
+            )}
           </Flex>
         </Flex>
       </Container>
@@ -168,7 +168,11 @@ export default function Header() {
                       navItems={navItem.navItems}
                     />
                   ) : (
-                    <NavLink to={navItem.href} className={mobileNavLink}>
+                    <NavLink
+                      to={navItem.href}
+                      onClick={() => setOpen(!isOpen)}
+                      className={mobileNavLink}
+                    >
                       {navItem.text}
                     </NavLink>
                   )}
