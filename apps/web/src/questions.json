@@ -3,10 +3,12 @@
     "question": "WHAT IS YOUR RELATIONSHIP WITH MONEY?",
     "answerOptions": [
       {
+        "id": "A",
         "answer": "Money is my best friend. I have abundant flow of money.",
         "isCorrect": true
       },
       {
+        "id": "B",
         "answer": "I do not share a great relationship with money. I always have a shortage of money."
       }
     ]
@@ -15,9 +17,11 @@
     "question": "DO YOU EXPERIENCE EMOTIONS LIKE SHAME AND GUILT WHEN MONEY COMES IN OR GOES OUT OF YOUR LIFE?",
     "answerOptions": [
       {
+        "id": "A",
         "answer": "No- I feel happy when money comes in or even goes out of my life."
       },
       {
+        "id": "B",
         "answer": "Yes- I feel shameful and guilty when money comes in or goes out of my life.",
         "isCorrect": true
       }
@@ -26,15 +30,23 @@
   {
     "question": "WHAT EMOTIONS DO YOU EXPERIENCE WHILE PAYING OUT TAXES?",
     "answerOptions": [
-      { "answer": "Contributing, pride, happiness and satisfaction." },
-      { "answer": "Frustration, guilt and sadness.", "isCorrect": true }
+      {
+        "id": "A",
+        "answer": "Contributing, pride, happiness and satisfaction."
+      },
+      {
+        "id": "B",
+        "answer": "Frustration, guilt and sadness.",
+        "isCorrect": true
+      }
     ]
   },
   {
     "question": "DOES MONEY STAY AWAY FROM YOU?",
     "answerOptions": [
-      { "answer": "No- I am money magnet. Money is in air for me." },
+      { "id": "A", "answer": "No- I am money magnet. Money is in air for me." },
       {
+        "id": "B",
         "answer": "Yes- I am always in a money crisis. Money is either ice or river for me.",
         "isCorrect": true
       }
@@ -43,8 +55,9 @@
   {
     "question": "DOES THE LACK OF MONEY TROUBLE YOU?",
     "answerOptions": [
-      { "answer": "No- I have a constant flow of money." },
+      { "id": "A", "answer": "No- I have a constant flow of money." },
       {
+        "id": "B",
         "answer": "Yes- I experience negative energy due to not having enough.",
         "isCorrect": true
       }
@@ -53,8 +66,12 @@
   {
     "question": "DO YOU THINK IT IS AN UNSAFE WORLD WHEN IT COMES TO MONEY?",
     "answerOptions": [
-      { "answer": "No- It is a safe world and I can trust people around me." },
       {
+        "id": "A",
+        "answer": "No- It is a safe world and I can trust people around me."
+      },
+      {
+        "id": "B",
         "answer": "Yes- People can do whatever it takes to earn more money.",
         "isCorrect": true
       }
@@ -63,8 +80,12 @@
   {
     "question": "DO YOU THINK, “ONLY LUCKY PEOPLE CAN BECOME RICH”?",
     "answerOptions": [
-      { "answer": "No- Everyone has the birth right to become rich." },
       {
+        "id": "A",
+        "answer": "No- Everyone has the birth right to become rich."
+      },
+      {
+        "id": "B",
         "answer": "Yes- Money comes only to lucky people.",
         "isCorrect": true
       }
@@ -73,8 +94,9 @@
   {
     "question": "DO YOU UNDERSTAND MONEY?",
     "answerOptions": [
-      { "answer": "Yes- Money is a combination of EQ, IQ and SQ." },
+      { "id": "A", "answer": "Yes- Money is a combination of EQ, IQ and SQ." },
       {
+        "id": "B",
         "answer": "No- Understanding money is very complicated.",
         "isCorrect": true
       }
@@ -84,9 +106,11 @@
     "question": "ARE YOU COMFORTABLE AND SATISFIED WITH THE MONEY YOU HAVE?",
     "answerOptions": [
       {
+        "id": "A",
         "answer": "Yes- I have planned my finances according to goal based investment."
       },
       {
+        "id": "B",
         "answer": "No- I am always short of money because | have not planned my finances according to my goals.",
         "isCorrect": true
       }
@@ -95,8 +119,12 @@
   {
     "question": "DO YOU THINK, “THE LESS YOU GIVE, THE MORE YOU HAVE”?",
     "answerOptions": [
-      { "answer": "No- Giving out money for a good cause is never harmful." },
       {
+        "id": "A",
+        "answer": "No- Giving out money for a good cause is never harmful."
+      },
+      {
+        "id": "B",
         "answer": "Yes- I do not like giving money.",
         "isCorrect": true
       }
@@ -106,22 +134,12 @@
     "question": "DO YOU BELIEVE FINANCIAL GOALS ARE ONLY FOR THE RICH PEOPLE?",
     "answerOptions": [
       {
+        "id": "A",
         "answer": "No- They are essential for everyone to live a comfortable lifestyle."
       },
       {
+        "id": "B",
         "answer": "Yes- It is just a fancy word for the rich class.",
-        "isCorrect": true
-      }
-    ]
-  },
-  {
-    "question": "DO YOU LIKE GIVING GIFTS?",
-    "answerOptions": [
-      {
-        "answer": "Yes- I always appreciate people with gifts."
-      },
-      {
-        "answer": "No- I just like receiving gifts.",
         "isCorrect": true
       }
     ]

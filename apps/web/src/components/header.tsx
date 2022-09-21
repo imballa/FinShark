@@ -100,7 +100,7 @@ export default function Header() {
   }, [isOpen])
 
   return (
-    <header>
+    <header className="bg-white sticky top-0 z-50">
       <Container className={desktopHeaderNavWrapper}>
         <Space size={2} />
         <Flex variant="spaceBetween">
