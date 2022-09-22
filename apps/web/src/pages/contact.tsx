@@ -1,12 +1,25 @@
 import * as React from "react"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import { StaticImage } from "gatsby-plugin-image"
 import ContactForm from "../components/contact-form"
 import { Box, Container, Flex, Space } from "../components/ui"
 
-export default function Contact(props) {
+interface ContactProps {
+  data: {
+    sanityPage: {
+      id: string
+      title: string
+      description: string
+      image: { id: string; url: string }
+    }
+  }
+}
+
+export default function Contact(props: ContactProps) {
+  const { sanityPage } = props.data
   return (
-    <Layout {...props}>
+    <Layout {...sanityPage}>
       <Box paddingY={4}>
         <Container width="tight">
           <StaticImage
@@ -31,3 +44,17 @@ export default function Contact(props) {
     </Layout>
   )
 }
+
+export const query = graphql`
+  {
+    sanityPage(title: { eq: "Contact" }) {
+      id
+      title
+      description
+      image {
+        id
+        url
+      }
+    }
+  }
+`

@@ -11,6 +11,7 @@ interface LayoutProps {
 }
 
 const Layout: React.FC<LayoutProps> = (props) => {
+  console.log("props:", props)
   return (
     <>
       <Head {...props} />

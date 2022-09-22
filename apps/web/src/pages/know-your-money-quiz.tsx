@@ -1,12 +1,25 @@
 import React from "react"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import { Container, Text, Flex, Section, Space } from "../components/ui"
 import { StaticImage } from "gatsby-plugin-image"
 import KymQuizUsersForm from "../components/kym-quiz-users-form"
 
-export default function KnowYourMoneyQuiz() {
+interface KnowYourMoneyProps {
+  data: {
+    sanityPage: {
+      id: string
+      title: string
+      description: string
+      image: { id: string; url: string }
+    }
+  }
+}
+
+export default function KnowYourMoneyQuiz(props: KnowYourMoneyProps) {
+  const { sanityPage } = props.data
   return (
-    <Layout>
+    <Layout {...sanityPage}>
       <Section>
         <Container width="tight">
           <StaticImage
@@ -38,3 +51,17 @@ export default function KnowYourMoneyQuiz() {
     </Layout>
   )
 }
+
+export const query = graphql`
+  {
+    sanityPage(title: { eq: "Know Your Money" }) {
+      id
+      title
+      description
+      image {
+        id
+        url
+      }
+    }
+  }
+`
