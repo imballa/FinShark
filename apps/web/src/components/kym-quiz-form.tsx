@@ -61,7 +61,7 @@ export default function KymQuizForm() {
       onSubmit={handleSubmit}
       className="flex flex-col px-6 pb-8 bg-finBlue justify-center items-center shadow-md"
     >
-      {state.succeeded && showScore ? (
+      {showScore ? (
         <Container width="tight">
           <h2 className="text-4xl my-6 underline font-semibold text-center text-white">
             Here is the Result
